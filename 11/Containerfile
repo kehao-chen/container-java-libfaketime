@@ -1,0 +1,7 @@
+FROM docker.io/bitnami/java:11
+LABEL maintainer "Kehao Chen <kehao.chen@happyhacking.ninja>"
+
+# Install libfaketime
+RUN install_packages libfaketime
+
+CMD [ "bash" ]
